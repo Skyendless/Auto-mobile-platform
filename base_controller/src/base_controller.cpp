@@ -64,7 +64,7 @@ void callback(const geometry_msgs::Twist & cmd_input)//订阅/cmd_vel主题回�
     right_speed_data.d = linear_temp + 0.5f*angular_temp*D ;
 
     //存入数据到要发布的左右轮速度消息
-    left_speed_data.d*=ratio;   //放大１０００倍，mm/s
+    left_speed_data.d*=ratio;   //放大１０００倍，将单位从 m/s变为 mm/s
     right_speed_data.d*=ratio;//放大１０００倍，mm/s
 
     for(int i=0;i<4;i++)    //将左右轮速度存入数组中发送给串口
