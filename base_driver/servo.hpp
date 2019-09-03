@@ -1,0 +1,23 @@
+
+#ifndef SERVO_H_
+#define SERVO_H_
+
+
+//subpayoad header
+
+
+// AX SERVO REG ADDRESS LIST
+#define AX_ID_ADDRESS 3
+#define AX_GOAL_POSITION 30
+#define AX_TORQUE_ENABLE_ADD 24
+
+// XL SERVO REG ADDRESS LIST
+#define XL_ID_ADDRESS 7
+#define XL_OPERATE_MODE_ADD  11
+#define XL_TORQUE_ENABLE_ADD 64
+#define XL_GOAL_VELOCITY_ADD 104
+#define XL_GOAL_POSITION     116
+
+#endif
+
+
